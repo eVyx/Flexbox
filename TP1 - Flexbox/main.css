@@ -65,8 +65,7 @@
     align-items: center;
 }
 
-#d6 {
-    
+#d6 {    
     flex-direction: row;
     justify-content: space-around;
 }

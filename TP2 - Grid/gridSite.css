@@ -1,0 +1,51 @@
+div{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 3, 1fr;
+}
+
+h1 {
+    grid-column: 1/span3;
+    grid-row: 1;
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    grid-column:2;
+    grid-row: 2;
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-type:disc;
+}
+
+footer {
+    display: grid;
+    grid-column: 1/span3;
+}
+
+div:nth-child(1) {
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+div:nth-child(2) {
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+div:nth-child(3) {
+    display: grid;
+    grid-column: 3;
+    grid-row: 3;
+}
+
