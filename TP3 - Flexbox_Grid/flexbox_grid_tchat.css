@@ -1,0 +1,54 @@
+body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+}
+
+h1 {
+    grid-column: 1 /span 2;
+}
+
+#tchat {
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: repeat (50, 1fr);
+    border: 2px #4d94ff solid;
+    border-radius: 30px;
+    margin: auto;
+    padding: 10px;  
+}       
+
+#userlist {
+    grid-column: 2;
+    border: 2px #4d94ff solid;
+    border-radius: 30px;
+    margin: auto;
+    padding: 10px;  
+}
+
+#tchat p:nth-child(odd) {
+    grid-column: 1 /span 25;    
+}
+
+#tchat p:nth-child(even) {
+    grid-column: 25 /span 50;
+    background-color: #4d94ff;
+    padding: 5px;
+    border: 2px #4d94ff solid;
+    border-radius: 30px;
+    padding : 10px;
+}
+
+#bottomBar {
+    grid-template-columns: 10fr 1fr 1fr;
+    border: 2px black solid;
+    border-radius: 30px;
+    display: grid;
+    margin: 20px;
+    padding: 20px;
+}
+
+#bottomBar:first-child {
+    flex: auto;
+    border-radius: 10px;
+}
